@@ -289,7 +289,10 @@ header {
 article:hover h2 {
   color: #1A237E;
 }
+.article {
+background-color: #000;
 
+}
 
 .article-img + * {
   margin-top: 1rem;
@@ -656,3 +659,5 @@ font-family: 'Montserrat', sans-serif;
     color: inherit;
     text-decoration: none;
   }
+
+  
