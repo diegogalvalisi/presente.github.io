@@ -8,6 +8,8 @@
 * Copyright 2011-2017 The Bootstrap Authors 
 * Copyright 2011-2017 Twitter, Inc. 
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700|Sacramento");
 :root {
   --blue: #007bff;
@@ -103,7 +105,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "DM Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -478,7 +480,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "DM Sans", sans-serif; }
 
 code {
   padding: 0.2rem 0.4rem;
@@ -3935,7 +3937,6 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4016,7 +4017,6 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6345,10 +6345,10 @@ html,
 body {
   width: 100%;
   height: 100%;
-  color: #3e396b; }
+  color: #111; }
 
 body {
-  font-family: 'Poppins';
+  font-family: "DM Sans", sans-serif;
   font-size: 14px; }
 
 button, input, optgroup, select, textarea {
@@ -6393,7 +6393,7 @@ h5, .h5 {
   font-weight: 700; }
 
 a {
-  color: #aa00ff;
+  color: #111;
   transition: all .35s; }
 
 a:hover,
@@ -6410,7 +6410,7 @@ section {
   padding: 60px 0px; }
 
 .card-outline-primary {
-  border-color: #aa00ff; }
+  border-color: #111; }
 
 .col-fixed {
   padding: 20px 0px; }
@@ -6426,7 +6426,7 @@ section {
   height: 45px; }
 
 .form-control:hover, .form-control:focus {
-  border-color: #aa00ff; }
+  border-color: #111; }
 
 .img-team {
   width: 80px; }
@@ -6444,7 +6444,7 @@ section {
   background-color: #032EFF !important; }
 
 .bg-primary {
-  background-color: #aa00ff !important; }
+  background-color: #111 !important; }
 
 .bg-purple {
   background-color: #3d5afe; }
@@ -6459,7 +6459,7 @@ section {
   background-color: #ff0080; }
 
 .bg-green {
-  background-color: #aa00ff; }
+  background-color: #111; }
 
 .bg-red {
   background-color: #FF3B30; }
@@ -6496,7 +6496,7 @@ section {
   text-decoration: none; }
 
 .text-primary {
-  color: #aa00ff !important; }
+  color: #111 !important; }
 
 .text-purple {
   color: #3d5afe !important; }
@@ -6511,7 +6511,9 @@ section {
   color: #ff0080 !important; }
 
 .text-green {
-  color: #aa00ff !important; }
+  color: #111 !important;
+  font-family: 'Merriweather', serif;
+   }
 
 .text-red {
   color: #FF3B30 !important; }
@@ -6556,7 +6558,7 @@ section {
   background: rgba(255, 255, 255, 0.2) !important; }
 
 .btn-white {
-  color: #aa00ff;
+  color: #111;
   background-color: #fff;
   border-color: #fff; }
 
@@ -6573,7 +6575,7 @@ section {
 
 /*social icons*/
 .text-twitter-alt, .text-facebook-alt, .text-linkedin-alt, .text-google-alt, .text-github-alt {
-  color: #aa00ff; }
+  color: #111; }
 
 .text-twitter, .text-twitter-alt:hover {
   color: #00aced; }
