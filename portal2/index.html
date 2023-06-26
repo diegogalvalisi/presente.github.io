@@ -2,13 +2,19 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS Grid: Newspaper Layout</title>
+  <title>Presente - Noticias globales</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,800;1,800&family=Manrope:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'>
+<link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
 </head>
 <body>
+  
 <!-- partial:index.partial.html -->
 <div class="main__wrapper">
   <!--
@@ -20,8 +26,17 @@
     <a>Asia</a>
   </div>
   -->
+  <!--
+  <header>
+    <div class="header-links">
+      <a href="#">Global</a>
+      <a href="#">Latinoamerica</a>
+      <a href="#">Europa</a>
+    </div>
+  </header>
+  -->
   <main>
-  
+    
     <h1>Presente.</h1>
     <aside> 
       <div>
@@ -82,7 +97,7 @@
       <p>A tribute of sorts to an era of cool superhero movies, this is a Marvel-themed magazine! Recommended, because it took 45 hours, so you know some serious dedication has been poured into this.</p>
       </div>
       
-      <div class="item-with-image style">
+      <div class="item-with-image with-border">
       <h4>Titulo corto para titular</h4>
       <p>Explore a style guide and various page layouts for a pet adoption site in the  <em>Style Guide</em> collection. Inspired by the <em>Atomic Design</em> principle, this 8-pen collection includes a 404 page concept, an admin dashboard and what a Twitter user calls a 'media card zen garden'. Each pen comes with five (yes, five) color themes, including the  precious dark mode.</p>
       </div>
@@ -93,25 +108,20 @@
       </div>
 
 
-      <div>
-      <figure>
-        <img src="reforma.png"/>
-        <figcaption>See the new and improved menu for Toasty!</figcaption>
-      </figure>
-    </div>
-
-
-    <div class="social">
-      <img class="social__image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/showcase-social.gif"/>
       
-        <div class="social__subtitle">World News</div>
-      <div class="social__content">Looks like Covid-19 is gonna be around for a while so here is another friendly reminder to practice social distancing. Oh, and wear a mask! </div>
-    </div>
+      <div class="item-with-image with-border">
+      
+      
+        <h4>Elecciones en Uruguay, gana el voto en blanco</h4>
+        <p>Everybody loves esto. It's impossible to not love them, so here are 15 recipes, served with GSAP. Note the easter egg — the menu icon changes according to the esto that you choose.</p>
+      </div>
+
+
     
     
       
     
-    <div class="item-with-image esto with-border">
+    <div class="item-with-image with-border">
       
       
       <h4>Elecciones en Uruguay, gana el voto en blanco</h4>
@@ -119,43 +129,48 @@
     </div>
 
   
+   
     
     <div class="sidebar">
       
-        <a class="sidebar-item captcha" href="https://codepen.io/oliviale/full/RwWdNRd" target="_blank">
-        <h5>Explota gasoducto en China, fallecen lamentablmente 55 personas</h5>
-      </a>
-        <a class="sidebar-item slack-ui with-border" href="https://codepen.io/oliviale/full/GRpvNBa" target="_blank">
-        <h5>Slack UI gets reverse engineered</h5>
-        <p>Another valiant effort to reverse engineer a web app. However, the UI is repurposed to showcase Codepens instead of mock conversations. This is a codepen showcase inception situation.</p>
-      </a>
-      <a class="sidebar-item slack-ui with-border" href="https://codepen.io/oliviale/full/GRpvNBa" target="_blank">
-        <h5>Slack UI gets reverse engineered</h5>
-        <p>Another valiant effort to reverse engineer a web app. However, the UI is repurposed to showcase Codepens instead of mock conversations. This is a codepen showcase inception situation.</p>
-      </a>
-      <a class="sidebar-item slack-ui with-border" href="https://codepen.io/oliviale/full/GRpvNBa" target="_blank">
-        <h5>Slack UI gets reverse engineered</h5>
-        <p>Another valiant effort to reverse engineer a web app. However, the UI is repurposed to showcase Codepens instead of mock conversations. This is a codepen showcase inception situation.</p>
-      </a>
-        <!--
-        <a class="twitter-timeline" href="https://twitter.com/El_pais?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-       -->
+        <div class="sidebar-item">
+          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime"></span>  <span class="continent">| Europa</span></div> 
+          <h5>Explota gasoducto en China, fallecen lamentablmente 55 personas</h5>
+          <script src="time.js"></script>
+          </div>
+        <div class="sidebar-item with-border">
+          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime2"></span>  <span class="continent">| Sudamerica</span></div> 
+          <h5>Explota gasoducto en China, fallecen lamentablmente 55 personas</h5>
+          <script src="time.js"></script>
+          </div>
+
+          <div class="sidebar-item with-border">
+            <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime3"></span>  <span class="continent">| Asia</span></div> 
+            <h5>Explota gasoducto en China, fallecen lamentablmente 55 personas</h5>
+            <script src="time.js"></script>
+            </div>
+  
+            <div class="sidebar-item with-border">
+              <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime2"></span>  <span class="continent">| Europe</span></div> 
+              <h5>Explota gasoducto en China, fallecen lamentablmente 55 personas</h5>
+              <script src="time.js"></script>
+              </div>
+
+              <div class="sidebar-item with-border">
+                <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime2"></span>  <span class="continent">| Europe</span></div> 
+                <h5>Explota gasoducto en China, fallecen lamentablmente 55 personas</h5>
+                <script src="time.js"></script>
+                </div>
+  
+    <!--
+    <a class="twitter-timeline" data-lang="es" href="https://twitter.com/El_pais?ref_src=twsrc%5Etfw"  data-tweet-limit="3">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    --> 
+        
+      
         
     </div>
 
-    <div class="item-with-image cssgrid-collection">
-      <div class="cssgrid-collection__image">
-      <img src="biden.jpg"/>
-      </div>
-      <div class="cssgrid-collection__content">
-        <h4>
-           <div>More CSS Grid things like this one. Shelves, coupons and more! </div>
-          </h4>
-        <div class="multi-column-3">
-          <p>Get your fill of more CSS Grid items in this collection. There are a total of 32 pens to date... well, 33, if you count this one too. What can you expect in this collection? The hidden gems, in my totally  unbiased opinion, are the recreation of the Pac-Man layout and  coupons inspired by junk mail. A lot of joke items of things that shouldn't be done in CSS Grid, such as a shelf? Bathroom tiles wtf? and makeup palettes. If you are a cultured person, you will have a chance to enjoy a couple of pens inspired by Harry Potter and Pokemon. On the rare occasion that you are looking at this profile for something you can use in production, you really shouldn't. But, there are <em> some   </em>real-world applications, such as recipe layout, the product catalog, and  color palettes for a style guide.</p>
-        </div>
-      </div>
-    </div>
+    
     
   </main>
 
@@ -193,7 +208,7 @@
       
       </div>
       
-      <div class="item-with-image style">
+      <div class="item-with-image">
       <h4>Let's adopt, don't shop.</h4>
       <p>Explore a style guide and various page layouts for a pet adoption site in the  <em>Style Guide</em> collection. Inspired by the <em>Atomic Design</em> principle, this 8-pen collection includes a 404 page concept, an admin dashboard and what a Twitter user calls a 'media card zen garden'. Each pen comes with five (yes, five) color themes, including the  precious dark mode.</p>
       </div>
@@ -281,19 +296,19 @@
       <p>Eight playful toggles to toggle on and off for your amusement. Is it possible to use these on your site and still adhere to assessibility rules? No. But there's a really cute dog one you <em>have  </em>to see.</p>
       </div>
       
-    <div class="item-with-image cssgrid-collection">
-      <div class="cssgrid-collection__image">
-      <img src="biden.jpg"/>
-      </div>
-      <div class="cssgrid-collection__content">
-        <h4>
-           <div>More CSS Grid things like this one. Shelves, coupons and more!  </div>
+      <div class="item-with-image cssgrid-collection">
+        <a class="cssgrid-collection__image" href="https://codepen.io/collection/DQvYpQ" target="_blank">
+          <img src="biden.jpg">
+        </a>
+        <div class="cssgrid-collection__content">
+          <h4> 
+            <a href="https://codepen.io/collection/DQvYpQ" target="_blank">More CSS Grid things like this one. Shelves, coupons and more!  </a>
           </h4>
-        <div class="multi-column-3">
-          <p>this is a multi colum</p>
+          <div class="multi-column-3">
+            <p>Get your fill of more CSS Grid items in this collection. There are a total of 32 pens to date... well, 33, if you count this one too. What can you expect in this collection? The hidden gems, in my totally  unbiased opinion, are <a href="https://codepen.io/oliviale/full/wbyVWr" target="_blank">the recreation of the Pac-Man layout</a> and  <a href="https://codepen.io/oliviale/pen/wbyVWr" target="_blank">coupons inspired by junk mail</a>. A lot of joke items of things that shouldn't be done in CSS Grid, such as <a href="https://codepen.io/oliviale/full/PXGgMG" target="_blank">a shelf</a>?   <a href="https://codepen.io/oliviale/full/qggOog" target="_blank">Bathroom tiles wtf</a>? and  <a href="https://codepen.io/oliviale/full/bOWqbj" target="_blank">makeup palettes </a>. If you are a cultured person, you will have a chance to enjoy a couple of pens inspired by <a href="https://codepen.io/oliviale/full/JxVZpX" target="_blank">Harry Potter  </a>and  <a href="https://codepen.io/oliviale/full/RwNdeeQ" target="_blank">Pokemon.</a> On the rare occasion that you are looking at this profile for something you can use in production, you really shouldn't. But, there are <em> some   </em>real-world applications, such as <a href="https://codepen.io/oliviale/full/GPXozx" target="_blank">the recipe layout</a>,   <a href="https://codepen.io/oliviale/full/pqoEoJ" target="_blank">the product catalog</a>, and  <a href="https://codepen.io/oliviale/full/XyqQYL" target="_blank">color palettes for a style guide</a>.</p>
+          </div>
         </div>
       </div>
-    </div>
    
       <div class="item-with-image esto with-border">
       
@@ -325,6 +340,7 @@
     
    
   </main>
+  
   
 </div>
 <!-- partial -->

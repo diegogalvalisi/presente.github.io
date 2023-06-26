@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="reset.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<div id="page" class="site">
+
+	<header id="masthead" class="site-header grid-container-elements">
+	<div class="element-left">
+		<span id="current-day"></span>
+                    <script>
+                        let daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+                  let monthsOfYear = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // add this line to define the names of the months
+                  let currentDate = new Date();
+                  let currentDay = daysOfWeek[currentDate.getDay()];
+                  let formattedCurrentDay = currentDay.charAt(0).toUpperCase() + currentDay.slice(1);
+                  let currentDayNum = currentDate.getDate(); // get the day of the month
+                  let currentMonth = monthsOfYear[currentDate.getMonth()]; // get the month
+                  let formattedCurrentMonth = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1); // format the month name
+                  
+                  let currentDayElement = document.getElementById("current-day");
+                  currentDayElement.innerText = formattedCurrentDay + ", " + currentDayNum + " de " + formattedCurrentMonth; // update the message to include the day and month
+                  </script>
+		
+	</div>
+	
+	<div class="element-right">
+		<a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-twitter"></i></a>          
+		<a href="https://t.me/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-telegram"></i></a> 
+	</div>
+	</header>
+	<main id="primary" class="site-main">
+	
+	<div class="element-middle logo">
+		<a href="index.html">
+			Presente.
+		<!--
+		<div id="grande">presente.</div>
+		<div id="chico">global</div>
+		-->
+		</a>
+	</div>
+	<div class="magazine-layout">
+		<div class="magazine-column">
+			
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					El primer titulo izquierda
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+			</div>
+			</a>
+			</article>
+
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					El primer titulo izquierda
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+			</div>
+			</a>
+			</article>
+
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					El primer titulo izquierda
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+			</div>
+			</a>
+			</article>
+			
+		
+
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="http://localhost/wordpress/2023/06/01/esto-es-un-post/" class="article-link">
+				<figure class="article-img">
+					<img src="img/principal/russia.jpg">
+				</figure>
+				<h2 class="article-title article-title--large">
+					Este es el titulo principal del medio con una imagen
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu luctus massa. Nulla et urna convallis, varius elit vitae, pretium massa. Aenean vulputate, lectus vitae interdum suscipit, nulla enim viverra leo, quis tincidunt massa enim volutpat nisi.</p>
+				</div>
+				</a>
+			</article>
+			
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					El primer titulo izquierda
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+			</div>
+			</a>
+			</article>
+
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<figure class="article-img">
+					<img src="img/principal/wall.jpg">
+				</figure>
+				<h2 class="article-title article-title--small">
+					Esto es un titulo largo del medio
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Jonathan O'Connell</p>
+				</div>
+			</a>
+			</article>
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					El primer titulo izquierda
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+			</div>
+			</a>
+			</article>
+		</div>
+		<div class="magazine-column">
+		<article class="article";">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Tercer titulo a la izquierda abajo
+				</h2>
+			
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu luctus massa.</p>
+				</div>
+				<div class="article-author">
+					<div class="article-author-img">
+						<img src="author-5.png">
+					</div>
+					<div class="article-author-info">
+						<dl>
+							<dt class="strong">Maria Silva</dt>
+							<dt>Politologa</dt>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			
+		</div>
+	</div>
+</main>
+
+<footer class="center-text">
+  <div class="center-content">
+    <a href="comunicado.pdf" target="_blank" class="elements-link more-info">Nosotros</a>
+    <a href="comunicado.pdf" target="_blank" class="elements-link more-info">Contacto</a>
+  </div>
+  <div>
+    <p>© Presente 2023</p>
+  </div>
+</footer>
+	
+</body>
+</html>
