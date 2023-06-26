@@ -474,7 +474,7 @@ aside > div > div {
   width: 100%;
   margin: auto;
   font-weight: 400;
-  font-size: 17.5px;
+  font-size: 15px;
 }
 .sidebar-item p {
   margin-top: 1rem;
@@ -671,7 +671,7 @@ aside > div > div {
 
 /* time */
 
-.time{color: red; margin-bottom: 5px; font-weight: 600;}
+.time{ margin-bottom: 5px; font-weight: 600;}
 
 .time i{font-size: 0.8em;}
 
@@ -724,3 +724,13 @@ footer p {
   margin-top: 10px;
 }
 
+.breaking {
+  color: red;
+  text-align: center;
+  margin-bottom:10px;
+  font-weight: 600;
+}
+
+.breaking i{
+  font-size: 0.8em;
+}
