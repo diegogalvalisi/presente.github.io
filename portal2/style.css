@@ -474,7 +474,7 @@ aside > div > div {
   width: 100%;
   margin: auto;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1em;
 }
 .sidebar-item p {
   margin-top: 1rem;
