@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>Presente - Noticias globales</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,800;1,800&family=Manrope:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'>
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="icon" type="image/png" href="favicon.ico">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Noticias y opinión sobre la actualidad global">
+  <meta name="author" content="Presente">
+
+  <title>Presente - Noticias globales</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,800;1,800&family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+
 
 
 </head>
@@ -75,7 +82,7 @@
     -->
       
       <div class="item-with-image plan span--2">
-      <img src="imagenes/francia.webp" alt="Créditos imagen: Associated Press"/>
+      <img src="imagenes/francia.webp" title="Créditos imagen: Associated Press"/>
       <h4>Despliegue de 40 mil efectivos en Francia ante los crecientes disturbios</h4>
       <div class="multi-column">
         <p>Nuevamente, Francia se sumerge en una situación de inestabilidad política, en donde el presidente Emmanuel Macron accionó este jueves ante la fuerte crisis que se desata en el país galo, después de que los disturbios se extendieran por toda Francia durante la noche, desencadenados por el mortal disparo de un policia a un adolescente de ascendencia norteafricana durante un control de tráfico en un suburbio de París.</p>
@@ -95,7 +102,7 @@
       
       <div class="item-with-image">
       
-        <img src="imagenes/canada.jpg" lt="Créditos imagen: BBC"/>
+        <img src="imagenes/canada.jpg" title="Créditos imagen: BBC"/>
         <div class="breaking">último momento<i class="fa-solid fa-circle fa-fade"></i></div>
         <h4>Canadá: Incendios forestales empeoran</h4>
         <p>Los incendios en la región norteamericana siguen creciendo, sobrepasado las 8 millones de hectáreas, área 21 veces más grandes que la de los incendios del año pasado. </p>
@@ -110,7 +117,7 @@
     </div>
 
       <div class="item-with-image toggles">
-      <img src="imagenes/rusia.webp" alt="Créditos imagen: Aljazeera"/>
+      <img src="imagenes/rusia.webp" title="Créditos imagen: Aljazeera"/>
       <h4>"General Armagedón" detenido en Rusia</h4>
       <p>Detienen al general Surovikin por no informar al Kremlin sobre los planes del grupo Wagner.</p>
       <p>Esto se debió debido a que presuntamente conocía los planes de rebelión, y lo que devela una presunta co-participación en la situación de tensión de la semana pasada.      </p>
@@ -120,7 +127,7 @@
       
       <div class="item-with-image">
       
-        <img src="imagenes/rwanda.webp" alt="Créditos imagen: BBC"/>
+        <img src="imagenes/rwanda.webp" title="Créditos imagen: BBC"/>
         <h4>Declarado ilegal el envío de refugiados a Ruanda</h4>
         <p>La política migratoria implementada por el Gobierno británico ha experimentado un significativo revés tras el fallo emitido por un tribunal de apelaciones de Londres, el cual ha considerado como "ilegal" la deportación de una amplia cantidad de inmigrantes que aún se encuentran pendientes de solicitar asilo en Ruanda.
         </p>
@@ -146,25 +153,25 @@
     
     <div class="sidebar">
       <!--
-        <div class="breaking">Ultimo momento <i class="fa-solid fa-circle fa-fade"></i></div>
+        <div class="breaking">Último momento <i class="fa-solid fa-circle fa-fade"></i></div>
         -->
         <div class="sidebar-item">
-          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime"></span>  <span class="continent">| Ucrania</span></div> 
+          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime"></span>  <span class="continent">| <span class="flag-icon flag-icon-ua"></span> </span></div> 
           <h5>Una persona acusada de dirigir un ataque con un misil ruso que mató a 11 personas en una pizzería es arrestada en Ucrania</h5>
           <script src="time.js"></script>
           </div>
           <div class="sidebar-item">
-            <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime2"></span>  <span class="continent">| Internacional</span></div> 
+            <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime2"></span>  <span class="continent">| <i class="fa-solid fa-globe"></i> </span></div> 
             <h5>Presuntos restos humanos encontrados en el submarino Titan de Oceangate</h5>
             <script src="time.js"></script>
             </div>
             <div class="sidebar-item">
-              <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime3"></span>  <span class="continent">| Grecia</span></div> 
+              <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime3"></span>  <span class="continent">| <span class="flag-icon flag-icon-gr"></span>  </span></div> 
               <h5>Alexis Tsipras renuncia como presidente del Partido Syriza en Grecia</h5>
               <script src="time.js"></script>
               </div>
               <div class="sidebar-item">
-                <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime4"></span>  <span class="continent">| Alemania</span></div> 
+                <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span  id="elapsedTime4"></span>  <span class="continent">| <span class="flag-icon flag-icon-de"></span></span></div> 
                 <h5>Alemania reporta record en fuga de capitales</h5>
                 <script src="time.js"></script>
                 </div>
@@ -200,7 +207,7 @@
     <div class="multi-column">
       <p>
         O tão comentado Foro de São Paulo será reinaugurado, onde esta XXVI edição acontecerá em Brasília, capital do gigante sul-americano, e ocorrerá entre esta quinta-feira e o próximo domingo, sob o lema "Integração regional para avançar na soberania latino-americana e caribenha".</p>
-        <p>Por sua vez, novamente críticas crescentes ao projeto são mostradas por setores regionais de direita</p>
+        <p>Por sua vez, novamente críticas crescentes ao projeto são mostradas por setores regionais de direita que historicamente se opõem ao fórum promovido pelo governo petista.</p>
     </div>
   </div>
     
@@ -209,7 +216,7 @@
 
     <div class="item-with-image">
     
-      <img src="imagenes/uruguay-sequia.jpeg" alt="Créditos imagen: El Pais"/>
+      <img src="imagenes/uruguay-sequia.jpeg" title="Créditos imagen: El Pais"/>
       <h4>Uruguay: crisis del agua</h4>
      
 
@@ -218,7 +225,7 @@
     
     
     <div class="item-with-image">
-      <img src="imagenes/pr.jpg" alt="Créditos imagen: The independent"/>
+      <img src="imagenes/pr.jpg" title="Créditos imagen: The independent"/>
     <h4>Marchas multitudinarias en Puerto Rico por el aumento del precio de la electricidad</h4>
     <p>En una multitudinaria manifestación en Puerto Rico, miles de personas se unieron para protestar enérgicamente contra una propuesta que busca incrementar los costos de los recibos de luz, los cuales ya resultan difíciles de pagar para un creciente número de individuos.
 </p>
