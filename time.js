@@ -1,5 +1,5 @@
  function updateTimeElapsed() {
-              const publishedDate = new Date('2023-06-29T12:30:00Z');
+              const publishedDate = new Date('2023-06-30T12:00:00Z');
               const elapsedTimeElement = document.getElementById('elapsedTime');
               const now = new Date();
               const diff = now - publishedDate;
@@ -24,7 +24,7 @@
             setInterval(updateTimeElapsed, 1000);
 
             function updateTimeElapsed2() {
-              const publishedDate = new Date('2023-06-29T10:30:00Z');
+              const publishedDate = new Date('2023-06-30T10:30:00Z');
               const elapsedTimeElement = document.getElementById('elapsedTime2');
               const now = new Date();
               const diff = now - publishedDate;
@@ -49,7 +49,7 @@
             setInterval(updateTimeElapsed2, 1000);
 
             function updateTimeElapsed3() {
-                const publishedDate = new Date('2023-06-29T09:30:00Z');
+                const publishedDate = new Date('2023-06-30T09:30:00Z');
                 const elapsedTimeElement = document.getElementById('elapsedTime3');
                 const now = new Date();
                 const diff = now - publishedDate;
@@ -74,7 +74,7 @@
               setInterval(updateTimeElapsed3, 1000);
             
               function updateTimeElapsed4() {
-                const publishedDate = new Date('2023-06-29T08:30:00Z');
+                const publishedDate = new Date('2023-06-30T08:30:00Z');
                 const elapsedTimeElement = document.getElementById('elapsedTime4');
                 const now = new Date();
                 const diff = now - publishedDate;
