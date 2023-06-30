@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 :root {
-  --font: "DM Sans", sans-serif;
+  --font: "EB Garamond", serif;
   --font-title: 'Merriweather', serif;
   --font-sans-serif: "Manrope", sans-serif;
   --black: #1c1f33;
@@ -28,7 +28,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: var(--font);
   color: var(--black);
   padding: 4rem 2rem;
