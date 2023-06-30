@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Spectral:300,400,500,600,700,800");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 :root {
   --font: "DM Sans", sans-serif;
@@ -14,6 +15,7 @@
   --font: "DM Sans", sans-serif;
   --font: 'Spectral', serif;
   --font-title: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
 
   --font: "EB Garamond", serif;
   --font-title: "Playfair Display", serif;
