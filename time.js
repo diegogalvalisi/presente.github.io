@@ -74,7 +74,7 @@
               setInterval(updateTimeElapsed3, 1000);
             
               function updateTimeElapsed4() {
-                const publishedDate = new Date('2023-06-30T08:30:00Z');
+                const publishedDate = new Date('2023-06-30T09:30:00Z');
                 const elapsedTimeElement = document.getElementById('elapsedTime4');
                 const now = new Date();
                 const diff = now - publishedDate;
