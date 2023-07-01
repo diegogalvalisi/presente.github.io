@@ -1,5 +1,5 @@
  function updateTimeElapsed() {
-              const publishedDate = new Date('2023-06-30T12:00:00Z');
+              const publishedDate = new Date('2023-07-01T12:00:00Z');
               const elapsedTimeElement = document.getElementById('elapsedTime');
               const now = new Date();
               const diff = now - publishedDate;
@@ -24,7 +24,7 @@
             setInterval(updateTimeElapsed, 1000);
 
             function updateTimeElapsed2() {
-              const publishedDate = new Date('2023-06-30T10:30:00Z');
+              const publishedDate = new Date('2023-07-01T10:30:00Z');
               const elapsedTimeElement = document.getElementById('elapsedTime2');
               const now = new Date();
               const diff = now - publishedDate;
