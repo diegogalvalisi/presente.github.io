@@ -13,9 +13,9 @@
 
 
 :root {
-  --font: 'Segoe UI', sans-serif;
-  --font-title: 'Montserrat', sans-serif;
-  --font-sans-serif: 'Montserrat', sans-serif;
+  --font: 'Spectral', serif;
+  --font-title: "Manrope", sans-serif;
+  --font-sans-serif: "Playfair Display", serif;
   --black: #000;
   --black--acc: #222;
   --gray: #eee;
@@ -39,7 +39,7 @@
 }
 
 body {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: var(--font);
   color: var(--black);
   padding: 4rem 2rem;
