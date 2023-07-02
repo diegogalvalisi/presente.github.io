@@ -735,8 +735,11 @@ header {
   color: #333;
 }
 
+.red {
+  color: red;
+}
 
-
+.nored {color: #222;}
 
 /* footer */
 
@@ -770,8 +773,9 @@ footer p {
 }
 
 .breaking i{
-  font-size: 0.5em;
+  font-size: 0.65em;
   margin-left: 5px;
+ 
 }
 
 .no-mobile-border {
@@ -808,4 +812,77 @@ p + p {
   25% { opacity: 0.25; }
 
   100% { opacity: 1; }
+}
+
+/* flag-inside-picture */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-text {
+  position: absolute;
+  top: -0.2em;
+  left: 0.2em;
+ 
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.image-text h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.image-text p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* lastest */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+ul.timeline li{
+  padding-bottom:1em;
+}
+
+ul.timeline li p, h6{
+ padding-left:30px;
+}
+ul.timeline li h6{
+  color: red;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #ff0000;
+  display: inline-block;
+  position: absolute;
+  margin-left: 6px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li:before {
+  
+ 
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #ff0000;
+
+  width: 10px;
+  height: 10px;
+  z-index: 400;
+
 }
