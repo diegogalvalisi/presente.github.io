@@ -922,6 +922,8 @@ ul.timeline > li:before {
 
 .author {
   margin-top: 10px;
+  color: #b1afaf;
+  text-align: center;
 }
 
 .sidebar h5 {text-align: center; font-style: normal;}
