@@ -642,8 +642,12 @@ aside > div > div {
   font: 22px/1.1 var(--font-sans-serif);
   text-align: center;
   padding: 0.5rem;
-  color: var(--black);
-  margin: -1rem 0.5rem 0.3rem;
+  color: white;
+}
+
+.workout__blurb a{
+  display: inline;
+  padding-left: 10px;
 }
 .workout__title {
   font: 18px/1.1 var(--font-sans-serif);
