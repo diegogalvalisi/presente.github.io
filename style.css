@@ -373,7 +373,6 @@ aside > div > div {
   .sidebar {
     display: block;
     border-left: 1px solid;
-    padding-left: 1.2rem;
     margin: 0;
   }
 }
@@ -873,8 +872,20 @@ ul.timeline li{
   padding-bottom:1em;
 }
 
-ul.timeline li p, h6{
+ul.timeline li h6{
  padding-left:30px;
+}
+
+.sidebar h5 {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.article {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -914,6 +925,7 @@ ul.timeline > li:before {
   text-align: center;
   font-weight: 600;
   margin-bottom: 20px;
+  
 }
 
 .article:hover a{
