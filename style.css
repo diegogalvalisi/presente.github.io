@@ -872,11 +872,11 @@ ul.timeline {
 ul.timeline li{
   padding-bottom:1em;
 }
-/*
+
 ul.timeline li p, h6{
  padding-left:30px;
 }
-*/
+
 
 ul.timeline li h6{
   color: red;
