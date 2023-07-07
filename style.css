@@ -49,8 +49,8 @@ body {
 }
 
 body p {
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+
   hyphens: auto;
   font-weight: 200;
 }
@@ -572,6 +572,8 @@ aside > div > div {
 .cssgrid-collection h4 {
   margin: 0 0 0.8rem;
 }
+
+
 .cssgrid-collection__image {
   width: 30%;
   float: left;
@@ -583,6 +585,21 @@ aside > div > div {
   object-fit: cover;
   object-position: left;
 }
+
+.cssgrid-collection video {
+  width: 30%; 
+  float: left;
+  margin-right: 1.5rem;
+  
+}
+
+@media (max-width: 480px) {
+  .cssgrid-collection video {
+    width: 100%; 
+  }
+  
+}
+
 
 .cssgrid-collection p {
  margin-top: 10px;
@@ -700,11 +717,14 @@ aside > div > div {
   color: var(--black);
 }
 
+
 @media (max-width: 700px) {
   .sidebar {
-    display: none;
+    border-top: 1px solid #000;
+    margin-top: 20px;
   }
 }
+
 
 /* time */
 
@@ -852,10 +872,12 @@ ul.timeline {
 ul.timeline li{
   padding-bottom:1em;
 }
-
+/*
 ul.timeline li p, h6{
  padding-left:30px;
 }
+*/
+
 ul.timeline li h6{
   color: red;
 }
@@ -887,3 +909,21 @@ ul.timeline > li:before {
 
 }
 
+.article {
+  color: #999;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.article:hover a{
+  text-decoration: underline;
+}
+
+.author {
+  margin-top: 10px;
+}
+
+.sidebar h5 {text-align: center; font-style: normal;}
+
+.sidebar h6 {font-style: italic}
