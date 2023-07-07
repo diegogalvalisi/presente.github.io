@@ -13,7 +13,7 @@
 
 
 :root {
-  --font: 'Spectral', serif;
+  --font: "DM Sans", sans-serif;
   --font-title: 'Merriweather', serif;
   --font-sans-serif: "Playfair Display", serif;
   --black: #000;
@@ -39,7 +39,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-family: var(--font);
   color: var(--black);
   padding: 4rem 2rem;
