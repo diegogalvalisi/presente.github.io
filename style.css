@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 @font-face {
   font-family: 'Segoe UI';
   src: 
@@ -14,8 +16,10 @@
 
 :root {
   --font: "DM Sans", sans-serif;
-  --font-title: 'Merriweather', serif;
-  --font-sans-serif: "Playfair Display", serif;
+  --font-title: 'Montserrat', sans-serif;
+
+  --font-sans-serif: 'Montserrat', sans-serif;
+
   --black: #000;
   --black--acc: #222;
   --gray: #eee;
@@ -25,6 +29,8 @@
   --font: 'Spectral', serif;
   --font-title: 'Merriweather', serif;
   font-family: 'Roboto', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
 
   --font: "EB Garamond", serif;
   --font-title: "Playfair Display", serif;
@@ -77,6 +83,10 @@ a:hover, a:focus, a:active, a:visited {
 
 h1 {
   font: 500 50px/1 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+#logo {
   text-align: center;
 }
 @media (min-width: 700px) {
@@ -945,3 +955,7 @@ ul.timeline > li:before {
 .sidebar h5 {text-align: center; font-style: normal;}
 
 .sidebar h6 {font-style: italic}
+
+#info {margin-bottom: 20px;
+font-size: 0.9em;
+font-style: italic;}
