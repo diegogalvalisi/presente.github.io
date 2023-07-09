@@ -67,7 +67,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-
+ @import url("https://fonts.googleapis.com/css?family=Spectral:300,400,500,600,700,800");
  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,500,700,800");
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
@@ -422,7 +422,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  
  
 	 */
-	 font-family: "DM Sans", sans-serif;
+	 font-family: 'Spectral', serif;
 	 font-size: 1rem;
 	 line-height: 1.6em;
  }
