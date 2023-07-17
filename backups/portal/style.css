@@ -1,7 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,500,700,800");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Spectral:300,400,500,600,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+  --font: 'Spectral', serif;
+  --font-title: 'Merriweather', serif;
+
+  --font-sans-serif: 'Merriweather', serif;
+
+  --black: #000;
+  --black--acc: #222;
+  --gray: #eee;
+  --gray-1: #ededed;
+  /* 
+  --font: "DM Sans", sans-serif;
+  --font: 'Spectral', serif;
+  --font-title: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+
+  --font: "EB Garamond", serif;
+  --font-title: "Playfair Display", serif;
+  --font-sans-serif: "Manrope", sans-serif;
+
+   font-family: 'Segoe UI', sans-serif;
+  */
+}
+
 *,
 *:after,
 *:before {
@@ -9,7 +38,7 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font);
   font-size: 1rem;
   line-height: 1.5;
   color: #666;
@@ -31,17 +60,18 @@ img {
 }
 
 .logo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-title);
     font-weight: 600;
-    color: #1A237E;
-    font-size: 3em;
+    font: 500 50px/1 'Merriweather', serif;
+    text-align: center;
+   
     padding-top: 0.75em;
     
     
 }
 
 .logo a{
-  color: #1A237E;
+  color: #000;
   text-decoration: none;
  
 }
@@ -301,13 +331,13 @@ article:hover h2 {
 }
 
 .article-title {
-font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+font-family:  var(--font-title);
+  font-weight: 500;
   line-height: 1.25;
   color: #000;
 }
 .article-title--large {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .article-title--large + * {
   margin-top: 1.5rem;
