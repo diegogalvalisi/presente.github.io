@@ -317,7 +317,7 @@ header {
 }
 
 article:hover h2 {
-  color: #1A237E;
+  color: #666;
 }
 
 
@@ -687,4 +687,71 @@ font-family:  var(--font-title);
     text-decoration: none;
   }
 
-  
+  /* lastest */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+ul.timeline li{
+  padding-bottom:1em;
+}
+
+ul.timeline li h6{
+ padding-left:20px;
+}
+
+ul.timeline li h6{
+  color: red;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #ff0000;
+  display: inline-block;
+  position: absolute;
+  margin-left: 4px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li:before {
+ 
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #ff0000;
+
+  width: 10px;
+  height: 10px;
+  z-index: 400;
+
+}
+
+.red {
+  color: red;
+}
+
+.nored {color: #222;}
+
+.breaking {
+  color: red;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.breaking i{
+  font-size: 0.65em;
+  margin-left: 5px;
+ 
+}
+
+.fa-youtube {
+  color: red;
+}
