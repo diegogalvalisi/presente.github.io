@@ -1,458 +1,288 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="description" content="Noticias y opinión sobre la actualidad global">
-  <meta name="author" content="Presente">
-
-  <title>Presente - Actualidad global</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,800;1,800&family=Manrope:wght@800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/png" href="favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-  <script src="time.js"></script>
-
-
-
+<!-- saved from url=(0014)about:internet -->
+<html lang="es">
+	
+<head>  <!--
+	<meta name="apple-mobile-web-app-title" content="Site">
+	-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<title>Presente - Noticias globales</title>
+	<link rel="stylesheet" href="reset.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script  src="time.js"></script>
 </head>
+
 <body>
-  
-<!-- partial:index.partial.html -->
-<div class="main__wrapper">
-  <!--
-  <div class="sections">
-    <a>Internacional</a>
-    <a>Latinoamerica</a>
-    <a>Penisula iberica</a>
-    <a>Africa</a>
-    <a>Asia</a>
-  </div>
-  -->
-  <!--
-  <header>
-    <div class="header-links">
-      <a href="#">Global</a>
-      <a href="#">Latinoamerica</a>
-      <a href="#">Europa</a>
-    </div>
-  </header>
-  -->
-  <main>
-    
-    <h1>Presente.</i></h1>
-    
- 
-    <aside> 
-      <div>
-        <div class="issue">Edición global</div>
-        <div class="date"><span id="current-day"></span>
-          <script>
-              let daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-        let monthsOfYear = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // add this line to define the names of the months
-        let currentDate = new Date();
-        let currentDay = daysOfWeek[currentDate.getDay()];
-        let formattedCurrentDay = currentDay.charAt(0).toUpperCase() + currentDay.slice(1);
-        let currentDayNum = currentDate.getDate(); // get the day of the month
-        let currentMonth = monthsOfYear[currentDate.getMonth()]; // get the month
-        let formattedCurrentMonth = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1); // format the month name
-        
-        let currentDayElement = document.getElementById("current-day");
-        currentDayElement.innerText = formattedCurrentDay + ", " + currentDayNum + " de " + formattedCurrentMonth; // update the message to include the day and month
-        </script></div>
-        <div class="edition">Formato digital</div>
-      </div>
-    </aside>
-    <!--
-    <h2 class="title--large main-title">Woman spends too much time on Codepens despite advice; no plans to stop</h2>
-    <div class="main-text multi-column">
-      <p>Sometimes, Internet users land themselves in an uncommon situation where an app or website can be used for both work and personal situations. Well, a young front-end designer was spending up to 13 hours on the site, Codepen for work and her hobby, which unfortunately, is also coding. </p>
-      <p>The designer, whose work includes a  <em>To-Do Terrarium</em>, clarified, "Well, I didn't  <em> have  </em>to use it for work but it was already part of my workflow. It just made sense as it was more efficient."   The biggest issue, she said, is that she would hop on Codepen for work, but would get distracted by pens made by others in the community for unexpectedly long periods of time, which then causes her to spend even more time on the site.</p>
-      <p> "I mean, that's terrible right?" she asked. Codepen, which brands itself as the best place to build, test, and discover front-end code, has declined to comment at this time.</p>
-    </div>
-    
-    <div class="terrarium">
-      <figure><img src="russia.jpg"/>
-        <figcaption><i class="fa-solid fa-camera"></i> A to-do list that grows succulents when you've completed a task</figcaption>
-      </figure>
-    </div>
-    -->
-
-    <!--
-    <div class="item-with-image plan span--2">
-      <div class="image-container">
-        <img src="riots-france.jpg" title="Créditos imagen: Getty images"/>
-        
-        <div class="image-text">
-          <i class="flag-icon flag-icon-eu"></i>
-        </div>
-       
-        <div class="breaking">En desarrollo<i class="fa-solid fa-circle fa-fade"></i></div>
-      </div>
-
-    <div class="breaking">último momento<i class="fa-solid fa-circle fa-fade"></i></div> 
-      
-
-      
-      <h4>Tras éste Domingo, las protestas en Francia se bajan en intensidad considerablemente</h4>
-      <div class="multi-column">
-        <p>La noche del domingo presenció una disminución de la violencia y se realizaron menos arrestos.
-
-          No obstante, el Presidente Emmanuel Macron ha solicitado al Ministerio del Interior mantener una presencia policial "masiva" en las calles.</p>
-        <p>El día lunes, los alcaldes convocaron a manifestaciones frente a los ayuntamientos para protestar contra la violencia y los saqueos.
-
-          En Nanterre, ciudad natal de Nahel, el alcalde Patrick Jarry expresó su satisfacción por la disminución de la violencia, pero resaltó la importancia de no perder de vista el incidente que desencadenó esta situación y la necesidad constante de justicia.</p>
-      </div>
-      
-      <ul class="timeline">
-        <li>
-          <h6><span class="elapsedTime time" data-published="2023-07-03T10:00:00Z"></span> <span class="nored">Financiación hacia el policía que disparó a Nahel M alcanza el millón de euros a base de contribuciones           </span></h6>
-        </li>
-      
-        <li>
-          <h6><span class="elapsedTime time" data-published="2023-07-02T23:00:00Z"></span> <span class="nored">Tras la sexta noche de protestas, la situación en Francia parece que se calma relativamente</span></h6>
-        </li>
-        <li>
-          <h6><span class="elapsedTime time" data-published="2023-07-02T18:30:00Z"></span> <span class="nored">Arrestos en la ciudad de Lausanne, Suiza, tras disturbios protagonizados por jóvenes menores de edad</span></h6>
-
-        </li>
-        <li>
-          <h6><span class="elapsedTime time" data-published="2023-07-02T16:00:00Z"></span> <span class="nored">Situación de protestas disruptivas se expanden hacia Bélgica, con varios detenidos hasta el momento</span></h6>
-
-        </li>
-
-      </ul>
-    </div>
-    -->
-    
-    <div class="item-with-image">
-      <div class="image-container">
-        <img src="imagenes/travis.webp" title="Facebook"/>
-      
-
-      </div>
-
-      <h4>Soldado estadounidense cruza a Corea del Norte, lo detienen, no se sabe sobre su paradero</h4>
-      
-        <p>El Ejército de Estados Unidos ha identificado a un soldado que cruzó la línea de demarcación hacia Corea del Norte como Pvt. Travis King, un explorador de caballería que se unió al ejército en enero de 2021.</p>
-        <p>King estaba de visita en una zona fronteriza como civil cuando cruzó a Corea del Norte el martes, en medio de una secuencia de eventos aún no claros, que ocurren en un momento de diplomacia tensa y crecientes tensiones militares en la Península de Corea.</p>
-        <p>El portavoz de las Fuerzas de Estados Unidos en Corea, el Coronel Isaac Taylor, informó el martes que un soldado estadounidense cruzó "intencionalmente y sin autorización" la línea durante un recorrido regular de una sección de la zona de seguridad conjunta (JSA, por sus siglas en inglés) entre Corea del Norte y Corea del Sur.</p>
-      </div>
-      
-      <div class="item-with-image plan span--2">
-        <div class="image-container">
-          <img src="imagenes/odesa.webp" title="Créditos imagen: Reuters"/>
-        
-         
-          <div class="breaking">En desarrollo<i class="fa-solid fa-circle fa-fade"></i></div>
-        </div>
-
-        <h4>Verano en el norte: Europa bajo fuerte ola de calor, records de temperatura en China, e incendios en Canadá</h4>
-        <div class="multi-column">
-          <p>Italia enfrentó otro día de temperaturas abrasadoras el miércoles, lo que llevó a las autoridades a poner en alerta roja a 23 ciudades. El país continúa lidiando con una ola implacable de calor extremo, incendios forestales e inundaciones, que han causado estragos desde Estados Unidos hasta China.</p>
-          <p>En Grecia, los incendios forestales ardieron durante el tercer día consecutivo al oeste de la capital, Atenas, lo que llevó a los bomberos a luchar incansablemente para evitar que las llamas alcanzaran las refinerías costeras. Mientras tanto, millones de estadounidenses soportaron condiciones climáticas disruptivas mientras una peligrosa ola de calor se extendía desde el sur de California hasta el sur profundo del país. </p>
-          <p>Incluso en China, donde el enviado climático de Estados Unidos, John Kerry, participaba en conversaciones, el clima extremo no dio tregua. Los turistas desafiaron el calor para visitar un gigantesco termómetro que mostraba temperaturas superficiales de 80 grados Celsius.</p>
-          </div>
-        
-          <ul class="timeline">
-            
-            <li>
-              <h6><span class="elapsedTime time" data-published="2023-07-19T18:00:00Z"></span> <span class="nored">En Beijing, las temperaturas permanecieron por encima de los 35 °C durante el vigésimo octavo día consecutivo, estableciendo un nuevo récord<span></h6>
-            </li>
-            <li>
-              <h6><span class="elapsedTime time" data-published="2023-07-19T17:00:00Z"></span> <span class="nored">Phoenix experimentó su vigésimo día consecutivo con temperaturas que alcanzaron los 110 grados Fahrenheit o más</span></h6>
-            </li>
-           
-    
-          </ul>
-      </div>
-
-      <div class="item-with-image">
-        <div class="image-container">
-          <img src="imagenes/granos.webp" title="Reuters">
-        
-  
-        </div>
-  
-        <h4>Rusia da por terminado el acuerdo de granos con Ucrania</h4>
-        
-          <p>El Kremlin rechaza extender el acuerdo de granos del Mar Negro, lo que detiene la exportación de granos ucranianos al resto del mundo. Este pacto de granos ayudó a reducir los precios de los alimentos en más del 20 por ciento a nivel global.</p>
-          <p>El Secretario General de las Naciones Unidas, Antonio Guterres, lamenta profundamente la decisión de Rusia de poner fin al acuerdo de granos del Mar Negro, incluyendo la retirada de las garantías de seguridad de Rusia para la navegación en la parte noroeste del Mar Negro.</p>
-          <p>Según la Comisión Europea, Ucrania representa el 10% del mercado mundial de trigo, el 15% del mercado de maíz y el 13% del mercado de cebada. Por lo cual, la quiebra de este, representa un fuerte golpe al suministro de alimentos a nivel global.</p>
-        </div>
-
-      <div class="item-with-image">
-      <div class="image-container">
-          <img src="imagenes/puente.webp" title="Créditos imagen: Russian Investigative Committee/AFP/Getty Images"/>
-      
-
-      </div>
-
-      <h4>Nuevo ataque al puente de Crimea, Rusia culpa a Kiev</h4>
-      
-       <p>Las tensiones se intensifican a medida que Ucrania es culpada por un reciente ataque al puente, según Rusia. Las explosiones causaron dos muertes y el jefe del parlamento de Crimea, designado por Rusia.</p>
-        <p>Tras la invasión de Ucrania por parte de Moscú el año pasado, enviando fuerzas desde Crimea para apoderarse de la mayor parte de la región de Kherson en el sur de Ucrania y parte de la provincia adyacente de Zaporizhia, el puente se convirtió también en una importante ruta de suministro para las fuerzas rusas.</p>
-      </div>
-
-      <div class="item-with-image">
-        <div class="image-container">
-          <img src="imagenes/actores.webp" title="Reuters"/>
-        
-  
-        </div>
-  
-        <h4>Histórico paro laboral en Hollywood</h4>
-        
-          <p>El Sindicato de Actores de Pantalla (SAG) está exigiendo un reparto más justo de las ganancias y mejores condiciones laborales por parte de los gigantes del streaming. Durante la huelga, los actores no pueden participar en películas ni promocionar las películas que ya han realizado. Además, SAG busca proteger a los actores de ser reemplazados por réplicas digitales, exigiendo garantías de que no se utilizará inteligencia artificial (IA) ni caras y voces generadas por computadora para sustituir a los actores reales.</p>
-          <p>En el mayor cierre de la industria en más de seis décadas, aproximadamente 160,000 artistas dejaron de trabajar a partir de la medianoche en Los Ángeles. Durante el transcurso de la huelga, a los actores se les prohíbe participar en producciones cinematográficas o involucrarse en la promoción de sus películas ya realizadas.</p>
-        </div>
-     
-
-      
-      
-
-      <div class="item-with-image">
-        <div class="image-container">
-          <img src="imagenes/lago.webp" title=" Peter Power/AFP/Getty Images"/>
-        
-  
-        </div>
-  
-        <h4>Lago crawford: evidencia del inicio del antropoceno
-        </h4>
-        
-          <p>El martes, los miembros del Grupo de Trabajo del Antropoceno presentaron evidencia de este cambio en un lago en Ontario, Canadá. Creen que esta evidencia puede ayudar a determinar una fecha de inicio para este nuevo período impulsado por la actividad humana.</p>
-          <p>Según los científicos, la actividad humana ha alterado de manera fundamental la geología, la atmósfera y la biología de la Tierra, lo que ha dado lugar a un nuevo y distintivo período geológico conocido como el Antropoceno.</p>
-          <p>Dicen que un extracto de roca, o núcleo de sedimento, del lago muestra un registro de un "pico dorado" del impacto humano en el planeta Tierra.</p>
-        </div>
-
-      
-
-      
-      
-
-    
-      
-
-
-      
-
-      <div class="item-with-image">
-        <img src="articulos/amazonas.webp" title="Créditos imagen: REUTERS"/>
-       
-          <h4>Desmatamento na Amazônia cai um terço em 2023, afirma governo brasileiro</h4>
-          <p>Segundo o governo, o desmatamento na Amazônia brasileira caiu 33,6% nos primeiros seis meses do mandato do presidente Luiz Inácio Lula da Silva, em comparação com o mesmo período em 2022.</p>
-          <p>Estima-se que a floresta tenha encolhido 2.649 km² entre janeiro e junho deste ano, em comparação com os 3.988 km² registrados nos mesmos seis meses do ano passado, durante o mandato do presidente Bolsonaro.</p>
-          <p>Lula prometeu acabar com o desmatamento até 2030. Nos últimos anos, tem havido um aumento alarmante do desmatamento.</p>
-          <p>A Floresta Amazônica desempenha um papel crucial como uma barreira na luta global contra as mudanças climáticas.</p>
-        </div>
-
-      
-
-   
-
-
-
-    
-   
-
-
-
-
-  
-
-  
-   <!--
-        <div class="breaking">Último momento <i class="fa-solid fa-circle fa-fade"></i></div>
-        -->
-
-    <div class="sidebar">
-      <!--
-        <div class="sidebar-item">
-            
-          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span class="elapsedTime" data-published="2023-07-05T10:00:00Z"></span> | <i class="fa-solid fa-globe"></i></div> 
-          <h5>Meta, liderada por Mark Zuckerberg, lanzará 'Threads' para competir con Twitter</h5>
-          
-          </div>
-
-          <div class="sidebar-item">
-          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span class="elapsedTime" data-published="2023-07-04T21:00:00Z"></span> | <span class="flag-icon flag-icon-us"></span></div> 
-          <h5>Juez estadounidense limita la capacidad del presidente Joe Biden de contactar empresas de redes sociales</h5>
-          
-          </div>
-
-        <div class="sidebar-item">
-            
-          <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span class="elapsedTime" data-published="2023-07-04T19:00:00Z"></span> | <i class="fa-solid fa-globe"></i> </div> 
-          <h5>El planeta registra el día de mayor temperatura alguna vez registrada</h5>
-          
-          </div>
-          
-          <div class="sidebar-item">
-
-            <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span class="elapsedTime" data-published="2023-07-03T18:00:00Z"></span> | <i class="fa-solid fa-globe"></i></div> 
-            <h5>Rusia y Ucrania se acusan de manera recíproca de estar planeando un ataque en importante central nuclear</h5>
-            
-            </div>
-            
-              <div class="sidebar-item">
-                <div class="time"><i class="fa-solid fa-clock-rotate-left"></i> <span class="elapsedTime" data-published="2023-07-03T08:00:00Z"></span> | <span class="flag-icon flag-icon-gt"></span> </span></div> 
-                <h5>Fallo judicial en Guatemala podría anular las elecciones, tras intervención de la Corte Electoral guatemalteca</h5>
-                </div>
+  <header class="grid-container-elements responsive-wrapper header">
+	<div class="element-left">
+		<span id="current-day"></span>
+                    <script>
+                        let daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+                  let monthsOfYear = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // add this line to define the names of the months
+                  let currentDate = new Date();
+                  let currentDay = daysOfWeek[currentDate.getDay()];
+                  let formattedCurrentDay = currentDay.charAt(0).toUpperCase() + currentDay.slice(1);
+                  let currentDayNum = currentDate.getDate(); // get the day of the month
+                  let currentMonth = monthsOfYear[currentDate.getMonth()]; // get the month
+                  let formattedCurrentMonth = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1); // format the month name
                   
--->
-              <h5>Columnas de opinión <i class="fa-solid fa-pen-nib"></i></h5>
+                  let currentDayElement = document.getElementById("current-day");
+                  currentDayElement.innerText = formattedCurrentDay + ", " + currentDayNum + " de " + formattedCurrentMonth; // update the message to include the day and month
+                  </script>
+		
+	</div>
+	<div class="element-middle">
+	
+		
+	</div>
+	<div class="element-right">
+		<a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-twitter"></i></a>          
+        <a href="https://instagram.com/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+</header>
+<main class="responsive-wrapper">
+	<div class="element-middle logo">
+		<a href="index.html">
+			presente.
+		<!--
+		<div id="grande">presente.</div>
+		<div id="chico">global</div>
+		-->
+		</a>
+	</div>
+	<div class="magazine-layout">
+		<div class="magazine-column">
+			<article class="article">
+				<a href="https://legrandcontinent.eu/es/2023/07/17/la-via-latinoamericana-de-europa/" target="_blank" class="article-link">
+					<h2 class="article-title article-title--small">
+						La vía latinoamericana de Europa
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>La interrupción del diálogo político entre la Unión y la Comunidad de Estados Latinoamericanos y Caribeños (CELAC) desde 2015 fue una anomalía. Pero, ¿qué podemos esperar de la cumbre que se inaugura hoy en Bruselas?</p>
+			</div>
+			<div class="article-creditation">
+				<p><i class="fa-regular fa-at"></i> José Antonio Sanahuja, Le Grand Continent</p>
+			</div>
+			</a>
+			</article>
+			<article class="article">
+				<a href="https://www.dw.com/pt-br/desmatamento-na-amaz%C3%B4nia-cai-336-no-primeiro-semestre/a-66153263" target="_blank" class="article-link">
+					<figure class="article-img">
+						<img src="img/principal/amazonas.png">
+					</figure>
+					<h2 class="article-title article-title--small">
+						Desmatamento na Amazônia cai 33,6% no primeiro semestre
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Somente em junho, redução foi de 41%, atingindo menor nível de devastação desde 2018, apontam dados do Inpe. Ao mesmo tempo, desmatamento semestral aumenta no Cerrado</p>
+			</div>
+			<div class="article-creditation">
+				<p><i class="fa-regular fa-at"></i> Deutsche Welle</p>
+			</div>
+			</a>
+			</article>
+			<article class="article border-bottom">
+				<a href="https://www.youtube.com/watch?v=EfeMyRITlPk&t=2742s" target="_blank" class="article-link">
+					
+					<h2 class="article-title article-title--small">
+						<i class="fa-brands fa-youtube"></i> Imperiofobia - Elvira Roca Barea 
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Conversamos con la académica española sobre su libro "Imperiofobia y leyenda negra: Roma, Rusia, Estados Unidos y el Imperio español", además de distintos tópicos sobre ensayismo, historia e indigenismo, entre otros </p>
+			</div>
+			<div class="article-creditation">
+				<p><i class="fa-regular fa-at"></i> Dialogos Programa</p>
+			</div>
+			</a>
+			</article>
 
-              <div class="sidebar-item with-border article">
-                <a href="mas-alla-de-la-modernidad.html">
-                  <h6>Más allá de la modernidad: ¿Sirven los viejos esquemas para responder a los desafíos actuales?</h6>
-                </a>
+		
+
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+					<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> 
+						<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/klVTXKMVeG5oFBzjHGp?autoplay=0"  allowfullscreen title="Dailymotion Video Player"> </iframe> 
+					</div>
+					
+				<div class="breaking" style="padding-top: 10px;">En desarrollo<i class="fa-solid fa-circle fa-fade"></i></div>
+				<h2 class="article-title article-title--medium">
+					Elecciones generales España 23-J
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Este Domingo 23 de Julio, se celebraran las elecciones en el país iberico, donde Pedro Sanchez y la coalición progresista de gobierno se pondrán a prueba electoral nuevamente, ante los conservadores, que vienen de ganar múltiples elecciones locales</p>
+				</div>
+				</a>
+				<ul class="timeline">
+            
+					<li>
+					  <h6><span class="elapsedTime time" data-published="2023-07-21T20:00:00Z"></span> <span class="nored">Sánchez: “Hemos hecho la mejor campaña. Nos caímos y nos levantamos”<span></h6>
+					</li>
+					<li>
+					  <h6><span class="elapsedTime time" data-published="2023-07-21T17:00:00Z"></span> <span class="nored">Feijóo: “El primer partido al que llamaré si gano será el PSOE, aunque le moleste a Vox"</span></h6>
+					</li>
+					
+			
+				  </ul>
+			</article>
+			<article class="article border-bottom">
+				<a href="https://elordenmundial.com/mapas-y-graficos/mapas-entender-elecciones-espana/" target="_blank" class="article-link">
+				
+				<h2 class="article-title article-title--small">
+					Seis mapas para entender las elecciones en España
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> José Luis Marín y Álvaro Merino, EOM</p>
+				</div>
+			</a>
+			</article>
+			<!--
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Este es un titulo de medio abajo
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu luctus massa. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+				</div>
+				<div class="article-author">
+					<div class="article-author-img">
+						<img src="./author-4.png">
+					</div>
+					<div class="article-author-info">
+						<dl>
+							<dt>Andres Fernandez</dt>
+							<dd>Politologo</dd>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			-->
+			
+			
+			
+			
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="https://www.escenariomundial.com/2023/07/19/la-union-europea-y-celac-emitieron-una-historica-declaracion-conjunta-sobre-la-cuestion-malvinas/" class="article-link" target="_blank">
+				<figure class="article-img">
+					<img src="img/principal/ue-arg.png">
+				</figure>
+				<h2 class="article-title article-title--small">
+					La Unión Europea y CELAC emitieron una histórica declaración conjunta sobre la cuestión Malvinas
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Escenario Mundial</p>
+				</div>
+			</a>
+			</article>
+			
+			<article class="article">
+				<a href="https://www.atualidadeemfoco.com/2023/07/a-barbie-o-acaraje-e-globalizacao.html" target="_blank" class="article-link">
+				<h2 class="article-title article-title--small">
+					A Barbie, o acarajé e a globalização
+
+				</h2>
+				<div class="article-excerpt">
+					<p>O mundo ficou cor de rosa! Muitos amam, alguns já estão enjoados e outros simplesmente não aguentam mais. Tudo por causa do filme Barbie, que estreia no dia 20 de julho</p>
+				</div>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Atualidade em foco</p>
+				</div>
+			</a>
+			</article>
+			<article class="article border-bottom">
+				<a href="https://www.bbc.com/mundo/noticias-61473343" class="article-link" target="_blank">
+				<figure class="article-img">
+					<img src="img/principal/interlingua.jpg">
+				</figure>
+				<h2 class="article-title article-title--small">
+					Interlingua: por qué seguramente entenderás esta lengua inventada aunque nunca la hayas estudiado
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Darío Brooks, BBC</p>
+				</div>
+			</a>
+			</article>
+			
+			
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="mas-alla-de-la-modernidad.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Más allá de la modernidad: ¿Sirven los viejos esquemas para responder a los desafíos actuales?
+				</h2>
+				<div class="article-excerpt">
+					<p>La meta-modernidad como un marco interpretativo del y para el futuro</p>
+				</div>
+				<div class="article-author">
+					<div class="article-author-img">
+						<img src="articulos/diego.png">
+					</div>
+					<div class="article-author-info">
+						<dl>
+							<dt>Diego Galvalisi</dt>
+							<dd>Politólogo</dd>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			<article class="article border-bottom">
+				<a href="Muerte-de-Nahel-el-fracaso-del-Estado-francés-frente-a-sus-ghettos.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Muerte de Nahel: El fracaso del Estado francés frente a sus ghettos
+				</h2>
+				<div class="article-excerpt">
+					<p>El reflejo de una política de "integración" fallida, cuestión también europea</p>
+				</div>
+				<div class="article-author">
+					
+					<div class="article-author-img">
+						<img src="articulos/alex.png">
+					</div>
+					
+					<div class="article-author-info">
+						<dl>
+							<dt>Alexander Sánchez<br/> Lamour</dt>
+							<dd>Historiador</dd>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			
+
+
+		</div>
+	</div>
+</main>
+
+<footer class="responsive-wrapper">
+	<div class="grid-container-elements">
+		<div class="element-left">
+			<a href="comunicado.pdf" target="_blank" class="elements-link more-info"><i class="fa-solid fa-info"></i></a>			
+		</div>
+		<div class="element-middle">&nbsp</div>
+		<div class="element-right">
+			<a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-twitter"></i></a>          
+        <a href="https://instagram.com/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+	</div>
+	
+</footer>
   
-                <div class="author" >
-                  <i class="fa-solid fa-at"></i> Diego Galvalisi
-                </div>
-  
-                </div>
-
-              <div class="sidebar-item with-border article border" style="border-bottom: solid 1px #000;padding-bottom: 10px;">
-              <a href="Muerte-de-Nahel-el-fracaso-del-Estado-francés-frente-a-sus-ghettos.html">
-                <h6>Muerte de Nahel: El fracaso del Estado francés frente a sus ghettos</h6>
-                
-              </a>
-
-              <div class="author" >
-                <i class="fa-solid fa-at"></i> Alejandro Sánchez Lamour
-              </div>
-
-              </div>
-
-              <div class="sidebar-item article">
-                <div class="workout__image"><img src="banner.png" alt="Workout"/></div>
-        <div class="workout__blurb">
-          <a href="https://twitter.com/presente_global" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://instagram.com/presenteglobal" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-        
-              
-                </div>
-
-              
-              
-  <!--
-   <div class="with-border">
-
-    <a class="twitter-timeline" data-lang="es" href="https://twitter.com/presente_global?ref_src=twsrc%5Etfw"  data-tweet-limit="2" data-cards="hidden">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-  </div>
-  -->  
-      
-        
-    </div>
-
-    
-    <aside class="sections"> 
-
-      Latinoamérica y el Caribe &nbsp<i class="fa-solid fa-earth-americas"></i>
-  </aside>
-  
-  <div class="item-with-image plan span--2">
-    <img src="imagenes/cumbre.avif" title="Créditos imagen: FRANCO FAFASULI/GETTY IMAGES)"/>
-    <h4>Se inicia la cumbre CELAC-UE</h4>
-  <div class="multi-column">
-   
-      <p>La Unión Europea (UE) y la Comunidad de Estados Latinoamericanos y Caribeños (CELAC), conformada por 33 países, se reúnen en una cumbre de dos días en Bruselas con el objetivo de restablecer un diálogo fracturado, a pesar de las significativas diferencias que existen entre ambas partes. Esta reunión marca el primer encuentro entre los bloques desde su última cumbre en 2015, y ambas partes están trabajando contrarreloj para reconstruir una interlocución complicada.</p>
-      <p>Durante la cumbre, los líderes tienen previsto abordar temas como las relaciones comerciales, incluyendo las negociaciones con el Mercosur, reformas en el sistema financiero internacional, cambio climático y transiciones energéticas y digitales. </p>
-      <p>Además, los negociadores europeos buscan incluir una referencia a la guerra en Ucrania en el documento, un asunto delicado en el cual los dos bloques no siempre comparten posiciones alineadas. Mientras algunos países como Argentina, Chile o Uruguay condenan de manera contundente a Moscú, otros adoptan una postura más neutral, como México y Brasil, o incluso expresan un abierto respaldo a la estrategia belicista de Vladimir Putin, como es el caso de Nicaragua y Venezuela.</p>
-    
-    </div>
-</div>
-
-  <div class="item-with-image">
-    <img src="imagenes/Nayib-Bukele.webp" title="Créditos imagen: La Hora/Archivo"/>
-    <h4>Pese a críticas, Nayib Bukele oficializa su candidatura para el 2024</h4>
-
- 
-    <p>Este fin de semana, se realizaron elecciones internas en el partido del mandatario oficialista, que no estuvieron exentas de polémicas.  </p>
-    <p>Es así, tras este anuncio, que el mandatario irá acompañado, nuevamente, con el actual vicepresidente Félix Ulloa.      </p>
-    <p>Todo esto, tras el cuestionamiento de distintos sectores nacionales e internacionales, cuáles sostienen que la constitución señala claramente que la reelección está prohibida.</p>
-    <p>Por otro lado, la Sala Constitucional del Poder Judicial salvadoreño, afirmó que si era posible que el mandatario se presente nuevamente a elecciones. Situación que refleja la de Evo Morales en Bolivia en las pasadas elecciones del 2019.</p>
-
-</div>
-  
-<div class="item-with-image">
-  <img src="imagenes/mercosur.jpeg" title="Créditos imagen: Casa Rosada"/>
-<h4>Cumbre del Mercosur: finaliza el evento, con marcadas diferencias</h4>
-
-  <p>Los presidentes de los países miembros del Mercosur se reunieron nuevamente este martes en una cumbre, donde acordaron finalizar las negociaciones pendientes para un acuerdo comercial con la Unión Europea (UE).</p>
-  <p>Durante el encuentro, tres de los cuatro socios expresaron su preocupación por cualquier intento de "unilateralismo" en las discusiones con otros bloques o naciones, en contraste con la postura de Uruguay, que optó por no firmar el documento final.</p>
-
-</div>
-
-
-    <div class="item-with-image no-mobile-border" >
-      <h4>21 milhões passam fome no Brasil      </h4>
-      <p>Na última quarta-feira (12/07), a Organização das Nações Unidas, ONU, publicou a edição 2023  do relatório Estado da Segurança Alimentar e Nutricional no Mundo (The State of Food Security and Nutrition in the World). Nele consta uma relativa estabilidade da fome e subnutrição no planeta, mas os patamares ainda são elevados se comparados ao período anterior à pandemia de Covid-19.      </p>
-      <p>O relatório aponta para o número alarmante de cerca de 700 milhões de pessoas passando fome no mundo, com destaque para a Ásia e a África. O Brasil também aparece com status negativo no estudo realizado pela ONU. Justamente o país que havia deixado o mapa da fome da organização em 2014, fruto das políticas de distribuição de renda que democratizou o acesso aos alimentos.</p>
-      <p>Em 2022, ano em que o país lamentavelmente retornou ao mapa da fome da ONU, eram 21 milhões de pessoas em situação de insegurança alimentar grave ou moderada no Brasil, caracterizando um grave retrocesso nas políticas voltadas à população mais pobre e mais vulnerável, uma grande contradição no país que se destaca entre os maiores produtores de alimentos do planeta.</p>  
-      <div class="autor-noticia">
-       <a href="https://www.instagram.com/atualidadefoco/" ><i class="fa-solid fa-user-pen"></i> Atualidade em foco </a>
-      </div>
-    </div>
-
-  
-
-  
-  <!--
-  <div class="item-with-image cssgrid-collection">
-    <a class="cssgrid-collection__image" href="https://codepen.io/collection/DQvYpQ" target="_blank">
-      <img src="biden.jpg">
-    </a>
-    <div class="cssgrid-collection__content">
-      <h4> 
-        <a href="https://codepen.io/collection/DQvYpQ" target="_blank">More CSS Grid things like this one. Shelves, coupons and more!  </a>
-      </h4>
-      <div class="multi-column-3">
-        <p>Get your fill of more CSS Grid items in this collection. There are a total of 32 pens to date... well, 33, if you count this one too. What can you expect in this collection? The hidden gems, in my totally  unbiased opinion, are <a href="https://codepen.io/oliviale/full/wbyVWr" target="_blank">the recreation of the Pac-Man layout</a> and  <a href="https://codepen.io/oliviale/pen/wbyVWr" target="_blank">coupons inspired by junk mail</a>. A lot of joke items of things that shouldn't be done in CSS Grid, such as <a href="https://codepen.io/oliviale/full/PXGgMG" target="_blank">a shelf</a>?   <a href="https://codepen.io/oliviale/full/qggOog" target="_blank">Bathroom tiles wtf</a>? and  <a href="https://codepen.io/oliviale/full/bOWqbj" target="_blank">makeup palettes </a>. If you are a cultured person, you will have a chance to enjoy a couple of pens inspired by <a href="https://codepen.io/oliviale/full/JxVZpX" target="_blank">Harry Potter  </a>and  <a href="https://codepen.io/oliviale/full/RwNdeeQ" target="_blank">Pokemon.</a> On the rare occasion that you are looking at this profile for something you can use in production, you really shouldn't. But, there are <em> some   </em>real-world applications, such as <a href="https://codepen.io/oliviale/full/GPXozx" target="_blank">the recipe layout</a>,   <a href="https://codepen.io/oliviale/full/pqoEoJ" target="_blank">the product catalog</a>, and  <a href="https://codepen.io/oliviale/full/XyqQYL" target="_blank">color palettes for a style guide</a>.</p>
-
-        <p>Get your fill of more CSS Grid items in this collection. There are a total of 32 pens to date... well, 33, if you count this one too. What can you expect in this collection? The hidden gems, in my totally  unbiased opinion, are <a href="https://codepen.io/oliviale/full/wbyVWr" target="_blank">the recreation of the Pac-Man layout</a> and  <a href="https://codepen.io/oliviale/pen/wbyVWr" target="_blank">coupons inspired by junk mail</a>. A lot of joke items of things that shouldn't be done in CSS Grid, such as <a href="https://codepen.io/oliviale/full/PXGgMG" target="_blank">a shelf</a>?   <a href="https://codepen.io/oliviale/full/qggOog" target="_blank">Bathroom tiles wtf</a>? and  <a href="https://codepen.io/oliviale/full/bOWqbj" target="_blank">makeup palettes </a>. If you are a cultured person, you will have a chance to enjoy a couple of pens inspired by <a href="https://codepen.io/oliviale/full/JxVZpX" target="_blank">Harry Potter  </a>and  <a href="https://codepen.io/oliviale/full/RwNdeeQ" target="_blank">Pokemon.</a> On the rare occasion that you are looking at this profile for something you can use in production, you really shouldn't. But, there are <em> some   </em>real-world applications, such as <a href="https://codepen.io/oliviale/full/GPXozx" target="_blank">the recipe layout</a>,   <a href="https://codepen.io/oliviale/full/pqoEoJ" target="_blank">the product catalog</a>, and  <a href="https://codepen.io/oliviale/full/XyqQYL" target="_blank">color palettes for a style guide</a>.</p>
-      </div>
-    </div>
-  </div>
--->
-  
-
-
-
-
-  </main>
-  <footer>
-    <div id="info">Presente es un portal de noticias y análisis independiente sobre temas de actualidad, que se publica en castellano y portugués. Nuestra misión es informar para integrar, y por eso nuestro medio es una organización sin fines de lucro, orientada a la integración regional y cultural de nuestras regiones.</div>
-    <div class="social-icons">
-      
-      <a href="https://twitter.com/presente_global" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://instagram.com/presenteglobal" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="comunicado.pdf" target="_blank" class="elements-link more-info"><i class="fa-solid fa-info"></i></a>	
-      <!--
-              <a href="https://telegram.com/presenteglobal" target="_blank"><i class="fa-brands fa-telegram" ></i></a>
-
-      <a href="https://facebook.com/presenteglobal" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      -->
-    </div>
-    <div id="desc">
-    &copy; 2023, Presente.
-  </div>
-  </footer>
-  
-  
-  
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script  src="./script.js"></script>
-
 </body>
 </html>

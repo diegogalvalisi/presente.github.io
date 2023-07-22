@@ -1453,7 +1453,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
    }
  
    .capital-letter:first-of-type:first-letter {
-	 font-size: 2em;
+	 font-size: 2.2em;
 	 font-weight: bold;
 	 float: left;
 	 padding-right: 3px;
@@ -1732,15 +1732,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  
    .author-name {
 	 font-size: 1em;
+	 font-weight: 700;
 	 padding-top: 1em;
 	 color: #111;
    }
  
    .author-bio {
-	 margin-top: 10px;
+
 	 font-size: 0.8em;
    }
- 
+
+   
+
    .center-text {
 	 text-align: center;
    }

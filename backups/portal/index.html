@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="es">
+	
+<head>  <!--
+	<meta name="apple-mobile-web-app-title" content="Site">
+	-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<title>Presente - Noticias globales</title>
+	<link rel="stylesheet" href="reset.min.css">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script  src="time.js"></script>
+</head>
+
+<body>
+  <header class="grid-container-elements responsive-wrapper header">
+	<div class="element-left">
+		<span id="current-day"></span>
+                    <script>
+                        let daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+                  let monthsOfYear = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // add this line to define the names of the months
+                  let currentDate = new Date();
+                  let currentDay = daysOfWeek[currentDate.getDay()];
+                  let formattedCurrentDay = currentDay.charAt(0).toUpperCase() + currentDay.slice(1);
+                  let currentDayNum = currentDate.getDate(); // get the day of the month
+                  let currentMonth = monthsOfYear[currentDate.getMonth()]; // get the month
+                  let formattedCurrentMonth = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1); // format the month name
+                  
+                  let currentDayElement = document.getElementById("current-day");
+                  currentDayElement.innerText = formattedCurrentDay + ", " + currentDayNum + " de " + formattedCurrentMonth; // update the message to include the day and month
+                  </script>
+		
+	</div>
+	<div class="element-middle">
+	
+		
+	</div>
+	<div class="element-right">
+		<a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-twitter"></i></a>          
+        <a href="https://instagram.com/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+</header>
+<main class="responsive-wrapper">
+	<div class="element-middle logo">
+		<a href="index.html">
+			presente.
+		<!--
+		<div id="grande">presente.</div>
+		<div id="chico">global</div>
+		-->
+		</a>
+	</div>
+	<div class="magazine-layout">
+		<div class="magazine-column">
+			<article class="article">
+				<a href="https://legrandcontinent.eu/es/2023/07/17/la-via-latinoamericana-de-europa/" target="_blank" class="article-link">
+					<h2 class="article-title article-title--small">
+						La vía latinoamericana de Europa
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>La interrupción del diálogo político entre la Unión y la Comunidad de Estados Latinoamericanos y Caribeños (CELAC) desde 2015 fue una anomalía. Pero, ¿qué podemos esperar de la cumbre que se inaugura hoy en Bruselas?</p>
+			</div>
+			<div class="article-creditation">
+				<p><i class="fa-regular fa-at"></i> José Antonio Sanahuja, Le Grand Continent</p>
+			</div>
+			</a>
+			</article>
+			<article class="article">
+				<a href="https://www.dw.com/pt-br/desmatamento-na-amaz%C3%B4nia-cai-336-no-primeiro-semestre/a-66153263" target="_blank" class="article-link">
+					<figure class="article-img">
+						<img src="img/principal/amazonas.png">
+					</figure>
+					<h2 class="article-title article-title--small">
+						Desmatamento na Amazônia cai 33,6% no primeiro semestre
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Somente em junho, redução foi de 41%, atingindo menor nível de devastação desde 2018, apontam dados do Inpe. Ao mesmo tempo, desmatamento semestral aumenta no Cerrado</p>
+			</div>
+			<div class="article-creditation">
+				<p><i class="fa-regular fa-at"></i> Deutsche Welle</p>
+			</div>
+			</a>
+			</article>
+			<article class="article border-bottom">
+				<a href="https://www.youtube.com/watch?v=EfeMyRITlPk&t=2742s" target="_blank" class="article-link">
+					
+					<h2 class="article-title article-title--small">
+						<i class="fa-brands fa-youtube"></i> Imperiofobia - Elvira Roca Barea 
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Conversamos con la académica española sobre su libro "Imperiofobia y leyenda negra: Roma, Rusia, Estados Unidos y el Imperio español", además de distintos tópicos sobre ensayismo, historia e indigenismo, entre otros </p>
+			</div>
+			<div class="article-creditation">
+				<p><i class="fa-regular fa-at"></i> Dialogos Programa</p>
+			</div>
+			</a>
+			</article>
+
+		
+
+		</div>
+		<div class="magazine-column">
+			<article class="article border-bottom">
+				<a href="post-ejemplo.html" class="article-link">
+					<video controls poster="img/principal/pedro.jpg" style="width: 100%; height: 56.25%;padding-bottom: 10px;">
+						<source src="Programas_Elecciones 23J.mp4" type="video/mp4">
+						Tu navegador no soporta este video
+					</video>
+				<div class="breaking">En desarrollo<i class="fa-solid fa-circle fa-fade"></i></div>
+				<h2 class="article-title article-title--medium">
+					Elecciones generales España 23-J
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Este Domingo 23 de Julio, se celebraran las elecciones en el país iberico, donde Pedro Sanchez y la coalición progresista de gobierno se pondrán a prueba electoral nuevamente, ante los conservadores, que vienen de ganar múltiples elecciones locales</p>
+				</div>
+				</a>
+				<ul class="timeline">
+            
+					<li>
+					  <h6><span class="elapsedTime time" data-published="2023-07-21T20:00:00Z"></span> <span class="nored">Sánchez: “Hemos hecho la mejor campaña. Nos caímos y nos levantamos”<span></h6>
+					</li>
+					<li>
+					  <h6><span class="elapsedTime time" data-published="2023-07-21T17:00:00Z"></span> <span class="nored">Feijóo: “El primer partido al que llamaré si gano será el PSOE, aunque le moleste a Vox"</span></h6>
+					</li>
+					
+			
+				  </ul>
+			</article>
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<figure class="article-img">
+					<img src="img/principal/evo.jpg">
+				</figure>
+				<h2 class="article-title article-title--small">
+					Seis mapas para entender las elecciones en España
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> José Luis Marín y Álvaro Merino, EOM</p>
+				</div>
+			</a>
+			</article>
+			<!--
+			<article class="article">
+				<a href="post-ejemplo.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Este es un titulo de medio abajo
+				</h2>
+				
+				<div class="article-excerpt">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu luctus massa. Nulla et urna convallis, varius elit vitae, pretium massa.</p>
+				</div>
+				<div class="article-author">
+					<div class="article-author-img">
+						<img src="./author-4.png">
+					</div>
+					<div class="article-author-info">
+						<dl>
+							<dt>Andres Fernandez</dt>
+							<dd>Politologo</dd>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			-->
+			
+			
+			
+			
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="https://www.escenariomundial.com/2023/07/19/la-union-europea-y-celac-emitieron-una-historica-declaracion-conjunta-sobre-la-cuestion-malvinas/" class="article-link" target="_blank">
+				<figure class="article-img">
+					<img src="img/principal/ue-arg.png">
+				</figure>
+				<h2 class="article-title article-title--small">
+					La Unión Europea y CELAC emitieron una histórica declaración conjunta sobre la cuestión Malvinas
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Escenario Mundial</p>
+				</div>
+			</a>
+			</article>
+			
+			<article class="article">
+				<a href="https://www.atualidadeemfoco.com/2023/07/a-barbie-o-acaraje-e-globalizacao.html" target="_blank" class="article-link">
+				<h2 class="article-title article-title--small">
+					A Barbie, o acarajé e a globalização
+
+				</h2>
+				<div class="article-excerpt">
+					<p>O mundo ficou cor de rosa! Muitos amam, alguns já estão enjoados e outros simplesmente não aguentam mais. Tudo por causa do filme Barbie, que estreia no dia 20 de julho</p>
+				</div>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Atualidade em foco</p>
+				</div>
+			</a>
+			</article>
+			<article class="article border-bottom">
+				<a href="https://www.bbc.com/mundo/noticias-61473343" class="article-link" target="_blank">
+				<figure class="article-img">
+					<img src="img/principal/interlingua.jpg">
+				</figure>
+				<h2 class="article-title article-title--small">
+					Interlingua: por qué seguramente entenderás esta lengua inventada aunque nunca la hayas estudiado
+				</h2>
+				<div class="article-creditation">
+					<p><i class="fa-regular fa-at"></i> Darío Brooks, BBC</p>
+				</div>
+			</a>
+			</article>
+			
+			
+		</div>
+		<div class="magazine-column">
+			<article class="article">
+				<a href="mas-alla-de-la-modernidad.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Más allá de la modernidad: ¿Sirven los viejos esquemas para responder a los desafíos actuales?
+				</h2>
+				<div class="article-excerpt">
+					<p>La meta-modernidad como un marco interpretativo del y para el futuro</p>
+				</div>
+				<div class="article-author">
+					<div class="article-author-img">
+						<img src="articulos/diego.png">
+					</div>
+					<div class="article-author-info">
+						<dl>
+							<dt>Diego Galvalisi</dt>
+							<dd>Politólogo</dd>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			<article class="article border-bottom">
+				<a href="Muerte-de-Nahel-el-fracaso-del-Estado-francés-frente-a-sus-ghettos.html" class="article-link">
+				<h2 class="article-title article-title--small">
+					Muerte de Nahel: El fracaso del Estado francés frente a sus ghettos
+				</h2>
+				<div class="article-excerpt">
+					<p>El reflejo de una política de "integración" fallida, cuestión también europea</p>
+				</div>
+				<div class="article-author">
+					
+					<div class="article-author-img">
+						<img src="articulos/alex.png">
+					</div>
+					
+					<div class="article-author-info">
+						<dl>
+							<dt>Alexander Sánchez<br/> Lamour</dt>
+							<dd>Historiador</dd>
+						</dl>
+					</div>
+				</div>
+			</a>
+			</article>
+			
+
+
+		</div>
+	</div>
+</main>
+
+<footer class="responsive-wrapper">
+	<div class="grid-container-elements">
+		<div class="element-left">
+			<a href="comunicado.pdf" target="_blank" class="elements-link more-info"><i class="fa-solid fa-info"></i></a>			
+		</div>
+		<div class="element-middle">&nbsp</div>
+		<div class="element-right">
+			<a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-twitter"></i></a>          
+        <a href="https://instagram.com/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+	</div>
+	
+</footer>
+  
+</body>
+</html>
