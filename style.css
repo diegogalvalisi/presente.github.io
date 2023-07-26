@@ -320,6 +320,10 @@ article:hover h2 {
   color: #666;
 }
 
+.nonhover:hover h2 {
+  color: initial; /* or "color: inherit;" or "color: unset;" */
+}
+
 .article-img + * {
   margin-top: 1rem;
 }
