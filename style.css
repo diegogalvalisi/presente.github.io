@@ -763,3 +763,24 @@ ul.timeline > li:before {
   padding-bottom: 2rem;
     border-bottom: 1px solid #DDD;
 }
+
+.article {
+  flex: 1;
+
+}
+
+/* For mobile view (screen width up to 767px) */
+@media screen and (max-width: 767px) {
+  .magazine-column {
+    flex-direction: column;
+  }
+
+  /* Change the order of articles for mobile view */
+  .order-1 {
+    order: 2;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+}
