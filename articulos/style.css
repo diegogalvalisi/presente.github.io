@@ -1411,7 +1411,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  }
 
  .post-main h3 {
-	font-size: 1.1em;
+	font-size: 1em;
  }
 
  .credits {
@@ -1723,6 +1723,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	.author-div {
 	 position: relative;
 	 width: 100%;
+	 line-height: 1.5em;
    }
  
    .author-div::before {
@@ -1744,9 +1745,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  
    .author-bio{
 
-	 font-size: 0.8em;
-	 line-height: 0em;
-	
+	 font-size: 0.85em;
+	 
 	
    }
 
@@ -1797,3 +1797,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     
  }
 
+ .post p:first-of-type:first-line {
+	line-height: inherit;
+ }
