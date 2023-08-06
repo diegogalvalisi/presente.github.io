@@ -1511,6 +1511,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	 color: inherit;
 	 text-decoration: none;
    }
+
+   
+   @media (max-width: 480px) {
+	.credits {
+		text-align:right;
+		font-size: 0.50em;
+		font-style: italic;
+	  }
+
+  }
  
  
  /* author post */
