@@ -755,6 +755,20 @@ ul.timeline > li:before {
  
 }
 
+.flash {
+  color: #eec200;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.flash i{
+  font-size: 0.65em;
+  
+ 
+}
+
+
+
 .fa-youtube {
   color: red;
 }
