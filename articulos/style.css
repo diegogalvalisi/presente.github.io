@@ -1700,6 +1700,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	 display: grid;
 	 grid-template-columns: 1fr 1fr;
 	 width: 65%;
+	 margin-top:10px;
 	
    }
 
