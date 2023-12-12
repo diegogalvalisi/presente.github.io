@@ -1295,6 +1295,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	 overflow: hidden;
 	 background-blend-mode: multiply;
 	 font-size: 1em;
+
    }
  
    
@@ -1481,11 +1482,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
    }
    
    .post figure {
-	margin: 20px 0px;
+	margin: 0px 0px;
    }
   .post figcaption {
 	 padding-left: 10px;
    }
+
+
  .pic-medium {
 	 max-width: 120%;
    }
@@ -1696,9 +1699,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
    .grid-container {
 	 display: grid;
 	 grid-template-columns: 1fr 1fr;
+	 width: 65%;
 
 	 
    }
+
+   .grid-container2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top:10px;
+
+	
+  }
+
+  .grid-container2 a{
+	color: #111;
+	text-decoration: dotted;
+	
+  }
    
    .grid-item1 {
 	 width: 100%;
