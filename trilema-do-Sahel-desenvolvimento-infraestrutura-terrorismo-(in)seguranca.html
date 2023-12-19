@@ -17,32 +17,33 @@
 
 <body>
 
-	<header id="masthead" class="site-header grid-container-elements">
-	<div class="element-left">
-		<span id="current-day"></span>
-                    <script>
-                        let daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-                  let monthsOfYear = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // add this line to define the names of the months
-                  let currentDate = new Date();
-                  let currentDay = daysOfWeek[currentDate.getDay()];
-                  let formattedCurrentDay = currentDay.charAt(0).toUpperCase() + currentDay.slice(1);
-                  let currentDayNum = currentDate.getDate(); // get the day of the month
-                  let currentMonth = monthsOfYear[currentDate.getMonth()]; // get the month
-                  let formattedCurrentMonth = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1); // format the month name
-                  
-                  let currentDayElement = document.getElementById("current-day");
-                  currentDayElement.innerText = formattedCurrentDay + ", " + currentDayNum + " de " + formattedCurrentMonth; // update the message to include the day and month
-                  </script>
-		
-	</div>
-	
-	<div class="element-right">
-		<a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-x-twitter"></i></a>
-		<a href="https://www.threads.net/@presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-threads"></i></a>
-		<a href="https://instagram.com/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-instagram"></i></a>
-		
-		</div>
-	</header><!-- #masthead -->
+	<header id="masthead" class="site-header grid-container-elements2">
+    <div class="element-left">
+      <span id="current-day"></span>
+                      <script>
+                          let daysOfWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+                    let monthsOfYear = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; // add this line to define the names of the months
+                    let currentDate = new Date();
+                    let currentDay = daysOfWeek[currentDate.getDay()];
+                    let formattedCurrentDay = currentDay.charAt(0).toUpperCase() + currentDay.slice(1);
+                    let currentDayNum = currentDate.getDate(); // get the day of the month
+                    let currentMonth = monthsOfYear[currentDate.getMonth()]; // get the month
+                    let formattedCurrentMonth = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1); // format the month name
+                    
+                    let currentDayElement = document.getElementById("current-day");
+                    currentDayElement.innerText = formattedCurrentDay + ", " + currentDayNum + " de " + formattedCurrentMonth; // update the message to include the day and month
+                    </script>
+      
+    </div>
+    
+    <div class="element-right">
+      <a href="https://twitter.com/presente_global" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.threads.net/@presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-threads"></i></a>
+      <a href="https://instagram.com/presenteglobal" target="_blank" class="elements-link social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+      
+      </div>
+    </header><!-- #masthead -->
+  
 	<main id="primary" class="site-main post-main">
 
 		
@@ -480,27 +481,26 @@
 
 	</main><!-- #main -->
 
-  <footer class="center-text">
-    <!--
-<div class="center-content">
-<a href="comunicado.pdf" target="_blank" class="elements-link more-info">Sobre nosotros</a>
-</div>
--->
-<div>
-<p>© Presente 2023</p>
-</div>
-</footer>
+  <footer class="responsive-wrapper">
+    <div class="grid-container-elements3">
+      <div class="element-left">
+        <a href="index.html" class="elements-link more-info"><i class="fa-solid fa-circle-left"></i></a>			
+      </div>
+      <!--
+        <p><a href="#">Nosotros</a> | <a href="#">Publicar</a> | <a href="#">Contacto</a></p>
+        -->
+      <div class="element-middle">© Presente 2023</div>
+      <div class="element-right">
+                  
+        <a href="comunicado.pdf" target="_blank" class="elements-link more-info"><i class="fa-solid fa-info"></i></a>			
+
+    </div>
     
-		
-		
-		
-		
-	  
-	</div>
-	
-</footer>
+ 
+    
 	
 </div><!-- #page -->
+</footer>
 
 
 </body>

@@ -1000,15 +1000,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  
  /*barra arriba y abajo*/
  
- .grid-container-elements { 
+ .grid-container-elements3 { 
 	 display: grid;
-	 grid-template-columns: repeat(2, 1fr);
+	 grid-template-columns: repeat(3, 1fr);
 	 grid-gap: 15px;
 	
 	 padding-left: 1.75em;
 	 padding-right: 1.75em;
  }
  
+ .grid-container-elements2 { 
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 15px;
+   
+	padding-left: 1.75em;
+	padding-right: 1.75em;
+}
+
+
  .elements-link {
 	 text-decoration: none;
 	 font-weight: 500;
